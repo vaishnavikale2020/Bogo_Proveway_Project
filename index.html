@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expandable Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>YAY! It's BOGO</h1>
+    
+    <!-- Box 1 -->
+    <div class="box" data-price="10.00">
+      <div class="header">
+        <input type="radio" name="selection" id="unit1">
+        <label for="unit1">1 Unit</label>
+        <span>10% Off</span>
+        <span class="price">$10.00 USD</span>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box" data-price="18.00">
+      <div class="header">
+        <input type="radio" name="selection" id="unit2">
+        <label for="unit2">2 Unit</label>
+        <span>20% Off</span>
+        <span class="price">$18.00 USD</span>
+        <span class="most-popular">MOST POPULAR</span>
+      </div>
+      <div class="content">
+        <div class="dropdown">
+          <label for="size1">Size:</label>
+          <select id="size1">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <label for="color1">Color:</label>
+          <select id="color1">
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <label for="size2">Size:</label>
+          <select id="size2">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <label for="color2">Color:</label>
+          <select id="color2">
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box" data-price="24.00">
+      <div class="header">
+        <input type="radio" name="selection" id="unit3">
+        <label for="unit3">3 Unit</label>
+        <span>30% Off</span>
+        <span class="price">$24.00 USD</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span>Free Delivery</span>
+      <div>Total: $<span id="total">0.00</span> USD</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
