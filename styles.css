@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 400px;
+    background: white;
+    border: 2px solid #f06292;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #f06292;
+  }
+  
+  .box {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .box.active {
+    border-color: #f06292;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .most-popular {
+    background: #f06292;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 5px;
+  }
+  
+  .content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .box.active .content {
+    display: block;
+  }
+  
+  .dropdown {
+    margin: 5px 0;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  button {
+    width: 100%;
+    background: #f06292;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
